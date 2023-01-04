@@ -1,3 +1,4 @@
 Hello we are learning Git, i am understanding git
+Hello we are learning Git Now you make changes
 I have made the changes
 Its easy
