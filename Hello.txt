@@ -1,1 +1,2 @@
 Hello we are learning Git
+I have made the changes
