@@ -40,6 +40,7 @@ public class BookController {
 	//"http://localhost:8080/addbook"
 	@PostMapping("/addbook")
 	public Book addBook(@RequestBody Book book) {
+		System.out.println("Added Successfully");
 		return bookService.addBook(book);
 	}
 	
