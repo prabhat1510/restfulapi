@@ -32,6 +32,7 @@ public class BookController {
 	@GetMapping("/deletebookbyid/{id}")
 	public void deleteBookById(@PathVariable(name="id") Integer bookId) {
 		bookService.deleteBookById(bookId);
+		System.out.println("Deleted successfully");
 	}
 	
 	//"http://localhost:8080/addbook"
