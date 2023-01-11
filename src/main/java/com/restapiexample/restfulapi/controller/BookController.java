@@ -20,6 +20,7 @@ public class BookController {
 	@GetMapping("/getbookbyid/{id}")
 	public Book getBookId(@PathVariable(name="id") Integer bookId) {
 		Book book = bookService.getBookId(bookId);
+		System.out.println("Book retreived");
 		return book;
 	}
 	//"http://localhost:8080/getbooks"
