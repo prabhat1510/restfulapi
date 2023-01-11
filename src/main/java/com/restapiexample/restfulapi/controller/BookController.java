@@ -25,6 +25,7 @@ public class BookController {
 	//"http://localhost:8080/getbooks"
 	@GetMapping("/getbooks")
 	public List<Book> getBooks(){
+		System.out.println("Retrieved Successfully"
 		return bookService.getBooks();
 	}
 	
