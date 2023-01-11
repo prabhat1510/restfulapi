@@ -18,6 +18,7 @@ public class BookServiceImpl implements BookService {
 	public Book getBookId(Integer bookId) {
 		Optional<Book> bok = bookRepo.findById(bookId);
 		if (!bok.isEmpty()) {
+			System.out.println("Inside getBookId method in BookServiceImpl");
 			return bok.get();
 		} else {
 			return null;
@@ -41,7 +42,7 @@ public class BookServiceImpl implements BookService {
 
 	@Override
 	public Book addBook(Book book) {
-		
+		System.out.println("Inside addBook method");
 		return bookRepo.save(book);
 	}
 
